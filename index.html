@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="ParkingMapApp">
+    <head>
+        <meta charset="UTF-8">
+        <title>Vivid</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="VIVID">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="author" content="Joe Hoeller - VIVID">
+        <!-- Meta for Live tiles for Windows -->
+        <meta name="msapplication-TileImage" content="tile-background.png">
+        <meta name="msapplication-TileColor" content="#FF0000">
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <form class="form-template css3 intro">
+            <figure class="percent-to-goal">
+                <figcaption class="tooltip"><strong>$167</strong> still needed for this project</figcaption>
+                <div class="progress-bar"><div id="bar"></div></div>
+            </figure>
+            <div class="form-content">
+                <p><strong>Only 3 days left</strong>&nbsp;to fund this project.</p>
+                <p>Join the <strong>42</strong>&nbsp;other donors who have already supported this project. Every dollar helps.</p>
+                <div class="col-50">
+                    <span class="input-currency">
+                        <input type="number" class="action-item value-input" value="50" />
+                    </span>
+                </div>
+                <div class="col-50 last">
+                    <button class="action-item cta css3 ani-btn">give now</button>
+                </div>
+                <em><small>Why give $50?</small></em>
+            </div>
+            <div class="col-50">
+                <button class="generic-btn action-item">Save for later</button>
+            </div>
+            <div class="col-50 last">
+                <button class="generic-btn action-item">Tell your friends</button>
+            </div>
+        </form>
+    <script>
+        (function(){
+            'use strict';
+            var namespace = {};
+
+            namespace._ID = function (x){
+                return document.getElementById(x);
+            };
+
+            window.setTimeout(function(){
+                namespace._ID('bar').className = 'animate-progress';
+            },200);
+
+            window.clearTimeout(window.setTimeout);
+            return namespace;
+        })();
+    </script>
+    </body>
+</html>

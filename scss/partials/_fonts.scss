@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'andobold';
+  src: url('../fonts/ando_bold-webfont.eot');
+  src: url('../fonts/ando_bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ando_bold-webfont.woff2') format('woff2'),
+  url('../fonts/ando_bold-webfont.woff') format('woff'),
+  url('../fonts/ando_bold-webfont.ttf') format('truetype'),
+  url('../fonts/ando_bold-webfont.svg#andobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'andoregular';
+  src: url('../fonts/ando-webfont.eot');
+  src: url('../fonts/ando-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ando-webfont.woff2') format('woff2'),
+  url('../fonts/ando-webfont.woff') format('woff'),
+  url('../fonts/ando-webfont.ttf') format('truetype'),
+  url('../fonts/ando-webfont.svg#andoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'andolight';
+  src: url('../fonts/andolight-webfont.eot');
+  src: url('../fonts/andolight-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/andolight-webfont.woff2') format('woff2'),
+  url('../fonts/andolight-webfont.woff') format('woff'),
+  url('../fonts/andolight-webfont.ttf') format('truetype'),
+  url('../fonts/andolight-webfont.svg#andolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'andosemibold';
+  src: url('../fonts/andosemibold-webfont.eot');
+  src: url('../fonts/andosemibold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/andosemibold-webfont.woff2') format('woff2'),
+  url('../fonts/andosemibold-webfont.woff') format('woff'),
+  url('../fonts/andosemibold-webfont.ttf') format('truetype'),
+  url('../fonts/andosemibold-webfont.svg#andosemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'andothin';
+  src: url('../fonts/andothin-webfont.eot');
+  src: url('../fonts/andothin-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/andothin-webfont.woff2') format('woff2'),
+  url('../fonts/andothin-webfont.woff') format('woff'),
+  url('../fonts/andothin-webfont.ttf') format('truetype'),
+  url('../fonts/andothin-webfont.svg#andothin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Family Options:
+// lato, andobold, andoregular, andolight, andosemibold, andothin
+@mixin apply-font($family: lato, $weight: 400){
+  font-family: $family, Verdana, sans-serif;
+  font-weight: $weight;
+}

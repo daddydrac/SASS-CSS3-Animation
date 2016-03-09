@@ -1,0 +1,160 @@
+
+.form-template {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  min-width: 300px;
+
+  .action-item {
+    width: 100%;
+    //margin-right: 2.77%;
+    padding: 10px 20px;
+    font-size: 0.75em;
+    @include border-radius(3px);
+    border: none;
+  }
+  button.generic-btn {
+    font-size: 0.8333rem;
+    background: $elem_bg;
+    color: $body_text;
+    border: 1px solid #DEDEDE;
+    box-shadow: -1px 3px 4px -2px #E8E8E8;
+    white-space: nowrap;
+    transition: 0.85s;
+    font-weight: bolder;
+    &:hover {
+      background: darken($elem_bg, 10);
+    }
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 14px;
+    //border: 2px solid darken($global_borders, 1);
+    background: $elem_bg;
+    -webkit-box-shadow: inset 0px 0px 0px 1px $global_borders;
+    -moz-box-shadow: inset 0px 0px 0px 1px $global_borders;
+    box-shadow: inset 0px 0px 0px 1px $global_borders;
+    overflow: hidden;
+
+  }
+
+  .progress-bar figcaption {
+    position: relative;
+    padding: 3% 0;
+    text-align: center;
+    color: #FFF;
+    background: #333;
+    font-size: 0.85em;
+    font-weight: lighter;
+    @include border-radius(10px);
+  }
+
+  .progress-bar div {
+    display: block;
+    float: left;
+    height: 12px;
+  }
+
+  .tooltip {
+    margin-bottom: 10px;
+    padding: 10px;
+    color: $global_borders;
+    background: $tooltip;
+    @include border-radius(3px);
+    text-align: center;
+    font-size: 0.65em;
+    font-weight: lighter;
+    transition: 0.85s;
+    @include breakpoint($bp-414) {
+      font-size: 0.85em;
+    }
+    strong {
+      color: #FFF;
+    }
+  }
+
+  figure figcaption::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    top: 47px;
+    right: 11%;
+    border-style: solid;
+    border-width: 9px 7px 0 7px;
+    border-color: $tooltip transparent transparent transparent;
+  }
+
+  .progress-bar div::after {
+    display: block;
+    position: absolute;
+    font-family: Helvetica, Arial, sans-serif;
+    color: $body_text;
+    font-size: 0.5rem;
+    line-height: 1.25;
+    margin-top: 2px;
+    right: 0;
+    text-align: right;
+    padding-right: 8%;
+  }
+
+  .form-content {
+    padding: 4% 6%;
+    border-left: 1px solid darken($global_borders, 1);
+    border-right: 1px solid darken($global_borders, 1);
+    border-bottom: 1px solid darken($global_borders, 1);
+    margin-bottom: 15px;
+    box-shadow: -1px 3px 4px -2px #E8E8E8;
+    p {
+      color: $body_text;
+      font-size: 0.60em;
+      line-height: 19px;
+      transition: 0.85s;
+      @include breakpoint($bp-414) {
+        font-size: 0.85em;
+        margin-bottom: 30px;
+      }
+    }
+    p:first-child strong {
+      color: $attention;
+    }
+    em small {
+      display: block;
+      color: $emphasis;
+      font-size: 0.65em;
+    }
+    input.value-input {
+      padding-left: 20px;
+      padding-right: 0;
+      background: #FFF;
+      transition: 0.85s;
+      border: 1px solid darken($global_borders, 1);
+      font-weight: bolder;
+      &:focus {
+        background: $tooltip;
+        color: #FFF;
+      }
+    }
+    button.cta {
+      margin-right: 0;
+      background: $action_btn;
+      color: #FFF;
+      text-transform: capitalize;
+      transition: 0.85s;
+      &:hover {
+        background: darken($action_btn, 10);
+      }
+    }
+  }
+  .input-currency:before {
+    position: absolute;
+    content: "$";
+    color: $body_text;
+    margin-top: 5px;
+    margin-left: 6px;
+    font-size: 0.85em;
+    font-weight: bolder;
+  }
+}

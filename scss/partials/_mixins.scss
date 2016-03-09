@@ -1,0 +1,82 @@
+/**
+ * Convert PX to REMs.
+ */
+@function rem($px, $base: $base-font-size) {
+  @return ($px / $base) * 1rem;
+}
+
+
+@mixin originValue($current-progress){
+  div.progress-bar div {
+    width: 0;
+    height: 12px;
+    margin: 1px;
+    background: $attention;
+  }
+  .animate-progress {
+    width: $current-progress!important;
+    -webkit-transition-delay: 1.5s;
+    transition-delay: 1.5s;
+    -webkit-transition: width 2s;
+    transition: width 2s;
+  }
+  div.progress-bar div:after {
+    width: $current-progress;
+    content: "#{round($current-progress)} to goal!";
+  }
+
+}
+
+@mixin font-smoothing(){
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+}
+
+@mixin button($color: green, $width: 120px){
+  display: block;
+  width: $width;
+  text-transform: uppercase;
+  text-align: center;
+  @include apply-font(lato, 700);
+  font-size: rem(20px);
+  line-height: rem(20px);
+  text-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  padding: 13px 0;
+
+  @if $color == green{
+    background-color: $action_btn;
+    color: white;
+  }
+  @if $color == normal {
+    background-color: $elem_bg;
+    color: $body_text;
+  }
+}
+
+
+// Docs: http://apps.eky.hk/css-triangle-generator/
+@mixin get-triangle($color, $direction: 'down', $height: 9px){
+  width: 0;
+  height: 0;
+  border-style: solid;
+  @if $direction == 'up'{
+    border-width: 0 ($height/1.2) $height ($height/1.2);
+    border-color: transparent transparent $color transparent;
+  }
+  @if $direction == 'down'{
+    border-width: $height ($height/1.2) 0 ($height/1.2);
+    border-color: $color transparent transparent transparent;
+  }
+  @if $direction == 'left'{
+    border-width: ($height/1.2) $height ($height/1.2) 0;
+    border-color: transparent $color transparent transparent;
+  }
+  @if $direction == 'right'{
+    border-width: ($height/1.2) 0 ($height/1.2) $height;
+    border-color: transparent transparent transparent $color;
+  }
+}

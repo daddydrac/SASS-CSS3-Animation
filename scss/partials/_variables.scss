@@ -1,0 +1,40 @@
+// Define breakpoints: http://viewportsizes.com/
+@import 'mixins';
+//Portrait modes
+$bp-320: 320px; //iPhone4-5s,iPods,Droids,Galaxy Series
+$bp-375: 375px; //iPhone6 Portrait mode
+$bp-414: 414px; //iPhone6 Plus Portrait mode
+$bp-768: 768px; //Galaxy Series, iOS, Kindle Fire & Droid Tablet in Portrait mode//
+
+//Landscape Modes
+$bp-480: 480px; //iPhone4, Droids
+$bp-568: 568px; //iPhone5, Droids
+$bp-640: 640px; //iPhone5s, Droids, Galaxy Series
+$bp-667: 667px; //iPhone6
+$bp-736: 736px; //iPhone6 Plus
+$bp-1024: 1024px; //Standard Tablet in Landscape mode
+$bp-1200: 1200px; //Some netbooks
+$bp-992: 992px; //Stupid bootstrap
+
+
+// Base font size (for calculating REMs).
+$base-font-size: 16px;
+
+// Colors (names: http://name-of-color.com/)
+$tooltip: #424242;
+$attention: #EF5F3C;
+$action_btn: #1CBC2C;
+$emphasis: #27A4D5;
+$elem_bg: #FAFAFA;
+$body_text: #808080;
+$global_shadow: #F4F4F4;
+$global_borders: #DDDDDD;
+
+.percent-to-goal {
+  $before-goal: 245;
+  $actual-goal: 185;
+  $current-goal: 200;
+  $current-progress: (($before-goal - $current-goal) / ($before-goal - $actual-goal)) * 100%;
+  @include originValue($current-progress);
+}
+

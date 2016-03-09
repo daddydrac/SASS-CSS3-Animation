@@ -1,0 +1,22 @@
+{
+  "name": "vivid",
+  "version": "0.1.0",
+  "description": "CTVisit",
+  "license": "n/a",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.0",
+    "angular-route": "1.5.0",
+    "compass-mixins": "~1.0.2",
+    "breakpoint": "~4.6.4",
+    "breakpoint-sass": "~2.6.1"
+  },
+  "devDependencies": {}
+}

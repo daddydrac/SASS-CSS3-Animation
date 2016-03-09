@@ -1,0 +1,74 @@
+
+html{
+  font-size: $base-font-size; //rem baseline
+  overflow-x: hidden;
+}
+form {
+  &:after {
+    @include get-triangle($tooltip, 'down', 9px);
+  }
+}
+body{
+  @include apply-font();
+  font-size: rem(22px);
+  line-height: rem(30px);
+  @include font-smoothing();
+  color: black;
+  padding: 30px;
+}
+
+input {
+  box-sizing:border-box;
+}
+
+figure {
+  margin: 0;
+}
+
+.col-50 {
+  display: inline-block;
+  width: 46.5%;
+  margin-right: 4%;
+}
+
+div.last {
+  float: right;
+  margin-right: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+  padding: 0;
+  margin: 0;
+}
+
+:focus {
+  outline: 0;
+}
+
+a{
+  &:hover, &:focus{
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+p{
+  @include apply-font();
+  font-size: rem(22px);
+  line-height: rem(30px);
+  color: black;
+}
+
+strong {
+  font-weight: bold;
+}
+
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+//@include translate(-50%,-50%);
+
+
