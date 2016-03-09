@@ -1,3 +1,6 @@
+# VividSeats
+Web Developer Exam for Vivid - Joe Hoeller
+
 # VIVID CODE CHALLENGE
 
 ## Prerequisites
@@ -9,3 +12,4 @@
 - Checkout repository and navigate to project root
 - Grunt components `npm install`
 - `grunt dev`
+
