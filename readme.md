@@ -1,7 +1,5 @@
 # VividSeats
-Web Developer Exam for Vivid - Joe Hoeller
-
-# VIVID CODE CHALLENGE
+SASS Example with Css3 Animations
 
 ## Prerequisites
 - Install Node from [nodejs.org](http://nodejs.org/download/)
