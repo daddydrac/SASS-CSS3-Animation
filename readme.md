@@ -1,5 +1,5 @@
-# VividSeats
-SASS Example with Css3 Animations
+# SASS/CSS3 Animation
+SASS Example with CSS3 Animations
 
 ## Prerequisites
 - Install Node from [nodejs.org](http://nodejs.org/download/)
