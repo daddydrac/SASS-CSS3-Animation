@@ -1,5 +1,5 @@
 # SASS/CSS3 Animation
-SASS Example with CSS3 Animations, live example: http://joehoeller.com/vivid/
+SASS Example with CSS3 Animation
 
 ## Prerequisites
 - Install Node from [nodejs.org](http://nodejs.org/download/)
